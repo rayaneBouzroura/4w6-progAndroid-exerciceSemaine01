@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    Le layout bjr+2btn-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="30">
+<!--        textView qui dit bjr -->
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:textAlignment="center"
+            android:text="BOJOOOR"
+            android:gravity="center"
+            android:textSize="100sp"/>
+<!--            Le linear layout holding les deux boutons -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bootoon1">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bootoon2">
+                </Button>
+            </LinearLayout>
+    </LinearLayout>
+<!--    le linear layout holding les autre truc chelou d'en bas-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="horizontal">
+<!--        LA LISTE WOOHOO-->
+        <ListView
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+<!--        Linear layout holding les 3 blocks et le ehhh truc underneath it-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:orientation="vertical">
+<!--        Linear layout holding les 3 bloc de truc -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_weight="10"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_weight="10"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:layout_weight="10"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+<!--            Le icone super cool that is also tres relatable-->
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_restore_from_trash_24"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
